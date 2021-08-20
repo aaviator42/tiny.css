@@ -1,0 +1,175 @@
+/* 
+tiny.css v3
+COPYRIGHT @AAVIATOR42
+AGPLv3
+*/
+@charset "UTF-8";
+
+body {
+	background-color: #000000;
+	color: #d9d9d9;
+	font-family: Verdana, sans-serif;
+	font-size: 1rem;
+	width: 60%;
+	margin: auto;
+	padding: 1rem;
+	box-sizing: border-box;
+}
+
+@media screen and (max-width: 600px) {
+	body {
+		padding: 1rem;
+		width: 100%;
+		box-sizing: border-box;
+	}
+}
+
+kbd, var, time, sample, mark {
+	font-family: "Courier New", Courier, monospace; 
+	font-size: 1rem;
+	color: #d9d9d9;
+}
+
+kbd {
+	border-style: solid;
+	border-width: 0.1rem;
+	padding: 0.08rem;
+}
+
+small {
+	font-size: 0.8rem;
+}
+
+mark {
+	background-color: #4c3c3c;
+}
+
+var, i, em {
+	font-style: italic;
+}
+
+u {    
+	text-decoration: underline;
+	text-decoration-style: dashed;
+}
+
+ins, a {    
+	text-decoration: underline;
+	text-decoration-style: dotted;
+}
+
+a {
+	color: #44e0f4;
+}
+
+strike, del {
+	text-decoration: line-through;
+}
+
+strong, bold {
+	font-weight: bold;
+}
+
+q, blockquote, pre {
+	font-size:0.95rem;
+	border-left: 0.2em solid #0086b3;
+	background-color: #333333;
+	padding-left: 0.2rem;
+	
+	display: block;
+	margin-top: 0.5rem;
+	margin-bottom: 0.5rem;
+	margin-left: 2rem;
+	margin-right: 1rem;
+}
+
+/* class "ref" for reference, source of quote, etc. */
+.ref {
+	font-style: italic;
+	font-size: 0.9rem;
+	margin-left: 2.2rem;
+}
+.ref:before {
+	content:'\2013  ';
+}
+q:before {
+	content:'';
+}
+
+pre, code {
+	font-family: "Courier New", Courier, monospace; 
+	color: lime;
+	background-color: #19334d;
+}
+
+pre {
+	white-space: pre-wrap;
+}
+
+h1, h2, h3 {
+	margin-top: 0.7rem;
+	margin-bottom: 0.7rem;
+}
+
+h4, h5, h6 {
+	margin-top: 0.5rem;
+	margin-bottom: 0.5rem;
+}
+
+h1 {
+	font-size: 2rem;
+}
+
+h2 {
+	font-size: 1.75rem;
+}
+
+h3 {
+	font-size: 1.6rem;
+}
+
+h4 {
+	font-size: 1.45rem;
+}
+
+h5 {
+	font-size: 1.3rem;
+}
+
+h6 {
+	font-size: 1.15rem;
+}
+
+hr {
+  display: block;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  border: 0.05em dashed red;
+
+}
+
+blink {
+	animation: blink 0.8s step-end infinite;
+}  
+@keyframes blink {
+	67% { opacity: 0 }
+}
+
+table {
+	display: block;
+	overflow-x: auto;
+	white-space: nowrap;
+	border-collapse: collapse;
+	table-layout: auto;
+}
+
+td, th {
+	border: 0.1rem solid #dddddd;
+	text-align: left;
+	padding: 0.5rem;
+}
+
+tr:nth-child(even) {
+	background-color: #0D1D2C;
+}
+
